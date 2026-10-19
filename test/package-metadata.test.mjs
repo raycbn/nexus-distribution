@@ -9,8 +9,8 @@ const packageJson = JSON.parse(await readFile(path.join(root, "package.json"), "
 
 test("npm package exposes the installer as its single executable", async () => {
   assert.equal(packageJson.name, "nexus-installer");
-  assert.equal(packageJson.bin, "./bin/nexus-installer.mjs");
-  const cliPath = path.join(root, packageJson.bin);
+  assert.deepEqual(packageJson.bin, { "nexus-installer": "bin/nexus-installer.mjs" });
+  const cliPath = path.join(root, packageJson.bin["nexus-installer"]);
   const cli = await readFile(cliPath, "utf8");
   assert.equal(cli.split(/\r?\n/, 1)[0], "#!/usr/bin/env node");
 });
