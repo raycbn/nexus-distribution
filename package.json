@@ -1,0 +1,34 @@
+{
+  "name": "nexus-installer",
+  "version": "0.1.0",
+  "description": "Public bootstrap CLI for installing the proprietary NEXUS self-hosted distribution.",
+  "type": "module",
+  "bin": "./bin/nexus-installer.mjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "prepublishOnly": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raycbn/nexus-distribution.git"
+  },
+  "homepage": "https://github.com/raycbn/nexus-distribution#readme",
+  "bugs": {
+    "url": "https://github.com/raycbn/nexus-distribution/issues"
+  },
+  "license": "SEE LICENSE IN CLI-LICENSE.md",
+  "files": [
+    "bin/",
+    "lib/",
+    "test/",
+    "README.md",
+    "CLI-LICENSE.md",
+    "NEXUS-DISTRIBUTION-LICENSE.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
