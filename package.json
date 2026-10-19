@@ -27,7 +27,8 @@
     "lib/",
     "test/",
     "README.md",
-    "CLI-LICENSE.md"
+    "CLI-LICENSE.md",
+    "NEXUS-DISTRIBUTION-LICENSE.md"
   ],
   "publishConfig": {
     "access": "public"

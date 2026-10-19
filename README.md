@@ -1,6 +1,6 @@
 # NEXUS distribution
 
-NEXUS is proprietary self-hosted software. Its application source repository remains private. This public repository distributes the installation bundles and a small bootstrap CLI; it does not contain the application source.
+NEXUS is proprietary self-hosted software. Its application source repository remains private. This public repository distributes the installation bundles and a small bootstrap CLI; it does not contain the application source. The npm CLI has its own terms in CLI-LICENSE.md; NEXUS-DISTRIBUTION-LICENSE.md is the license for the application distribution downloaded by the CLI.
 
 ## Quick install with npx
 
