@@ -12,7 +12,7 @@ test("npm package exposes the installer as its single executable", async () => {
   assert.equal(packageJson.bin, "./bin/nexus-installer.mjs");
   const cliPath = path.join(root, packageJson.bin);
   const cli = await readFile(cliPath, "utf8");
-  assert.ok(cli.startsWith("#!/usr/bin/env node\n"));
+  assert.equal(cli.split(/\r?\n/, 1)[0], "#!/usr/bin/env node");
 });
 
 test("package publication runs the test suite first", () => {
