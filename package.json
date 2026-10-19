@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "Public bootstrap CLI for installing the proprietary NEXUS self-hosted distribution.",
   "type": "module",
-  "bin": "./bin/nexus-installer.mjs",
+  "bin": {
+    "nexus-installer": "bin/nexus-installer.mjs"
+  },
   "engines": {
     "node": ">=20"
   },
